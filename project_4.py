@@ -12,7 +12,7 @@ data = data.dropna()
 le = LabelEncoder()
 data["sex"] = le.fit_transform(data["sex"])
 scaler = StandardScaler()
-data[["age", "chol"]] = scaler.fit_transform(data[["age", "chol"]])
+df_scaled = scaler.fit_transform(data[["age", "chol"]])
 df
 
 import seaborn as sns
