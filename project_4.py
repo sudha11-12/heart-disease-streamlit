@@ -68,7 +68,6 @@ if st.button("Predict"):
     result = model.predict(input_data)
     st.write("Prediction:", "Positive" if result[0]==1 else "Negative")
 
-!pip install streamlit
 
 
 
